@@ -157,6 +157,28 @@
                             </div>
                         </a>
                     </div>
+
+                    <!-- Export Section -->
+                    <div class="mt-8">
+                        <div class="bg-gradient-to-r from-green-400 to-blue-500 rounded-lg p-6 text-white">
+                            <h3 class="text-lg font-semibold mb-4">Data Export</h3>
+                            <p class="text-sm mb-4">Export monitoring data to Excel format</p>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="{{ route('admin.export.buildings') }}" class="bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 text-sm">
+                                    Export Buildings
+                                </a>
+                                <a href="{{ route('admin.export.rooms') }}" class="bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 text-sm">
+                                    Export Rooms
+                                </a>
+                                <a href="{{ route('admin.export.cctvs') }}" class="bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 text-sm">
+                                    Export CCTVs
+                                </a>
+                                <a href="{{ route('admin.export.all') }}" class="bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 text-sm">
+                                    Export All Data
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -42,4 +42,10 @@ Route::middleware(['auth:admin'])->prefix('admin')->name('admin.')->group(functi
     // Notification
     Route::get('/notification', \App\Livewire\Admin\Notification\Index::class)->name('notification.index');
     Route::get('/notification/{notification}', \App\Livewire\Admin\Notification\Show::class)->name('notification.show');
+
+    // Export routes
+    Route::get('/export/buildings', [App\Http\Controllers\ExportController::class, 'buildings'])->name('export.buildings');
+    Route::get('/export/rooms', [App\Http\Controllers\ExportController::class, 'rooms'])->name('export.rooms');
+    Route::get('/export/cctvs', [App\Http\Controllers\ExportController::class, 'cctvs'])->name('export.cctvs');
+    Route::get('/export/all', [App\Http\Controllers\ExportController::class, 'all'])->name('export.all');
 });
